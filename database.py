@@ -50,12 +50,12 @@ def insert_data_into_database(api_responses):
 
 def query_database_for_postal_code(postalcode):
     try:
-        #print("Connecting to database...")
+        print("Connecting to database...")
 
         # Establishing the connection to MySQL
         mydb = connect_to_database()
 
-        #print("\nConnected to database!")
+        print("\nConnected to database!")
         cursor = mydb.cursor() 
         
         sql = "SELECT * FROM `geoloc`.`cp_dist_conc` WHERE codigo_postal = %s"
@@ -68,5 +68,5 @@ def query_database_for_postal_code(postalcode):
     except Error as e:
         print(f"The error '{e}' occurred while inserting data.")
     finally:
-        # print("Database operation completed.")
-        print()
+        print("Database operation completed.")
+        #print()

@@ -13,7 +13,7 @@ def print_results(result): # [ (213, '7750-104', 'Mértola', 'Beja') ]
     if result is None or len(result) <= 0:
         print("Couldn't find CP")
     else:
-        print("id:", result[0][0]) 
+        print("\nid:", result[0][0]) 
         print("codigo postal:", result[0][1])
         print("concelho:", result[0][2])
         print("distrito:", result[0][3])

@@ -19,7 +19,7 @@ def read_csv(file_name):
         for row in reader:
             data.append(row["cp7"])
     return data
-        
+ 
 
 # Define a function to make API requests and fetch data
 def fetch_data(api_url, api_key, postal_codes):
